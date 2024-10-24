@@ -16,10 +16,10 @@ This is the steps I took for linking monash laptop with my github account using 
 	```
 	
 	
-3. Public key will be saved at: "C:\Users\your-username\.ssh\id_ed25519.pub"
+3. Public key will be saved at: `C:\Users\your-username\.ssh\id_ed25519.pub`
 
 4. Add the SSH key to GitHub:
-	- Open the public key: run CMD and type "cat ~/.ssh/id_ed25519.pub" then enter. Copy the content
+	- Open the public key: run CMD and type `cat ~/.ssh/id_ed25519.pub` then enter. Copy the content
 	- Go to your github: GitHub → Settings → SSH and GPG keys → New SSH key. 
 	- Paste the key into the Key field and give it a title (for example monash_laptop).
 	- Click Add SSH key.
@@ -70,3 +70,5 @@ cd "C:\..\statagit"
 ```
 
 
+
+Note: Interesting github markdown guide [here](https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet)
