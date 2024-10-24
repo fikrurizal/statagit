@@ -9,8 +9,14 @@ This is my guide
 * This is the steps I took for linking monash laptop with my github account using SSH key (the most straightforward approach I've tried & successful in a first go)
 1. Install git (from Software Centre)
 
-2. Open PowerShell or Command Prompt. Generate SSH key: ssh-keygen -t ed25519 -C "your.email@example.com"
-3. Public key will be saved at: C:\Users\your-username\.ssh\id_ed25519.pub
+2. Open PowerShell or Command Prompt. Generate SSH key: 
+	
+	```
+	ssh-keygen -t ed25519 -C "your.email@example.com"
+	```
+	
+	
+3. Public key will be saved at: "C:\Users\your-username\.ssh\id_ed25519.pub"
 
 4. Add the SSH key to GitHub
 5. Open the public key: run CMD and type "cat ~/.ssh/id_ed25519.pub" then enter. Copy the content
@@ -27,30 +33,38 @@ You can now use RStudio's Git tab or Terminal or Stata for version control tasks
 ## Initialize Git with Stata
 
 * Change directory to local folder you want to "push" to github repo
+```
 cd "G:\My Drive\MUHEG - Others\CodingClub\statagit"
+```
 
 * Check status
+```
 !git status
+```
 
 * Intialise git for the folder/directory
+```
 !git add .
 !git commit -m "Initial commit with Stata project files"
+```
 
 * Create repository in your github account. Don't add anything yet
 
 * Push the directory to hithub
+```
 !git remote add origin https://github.com/fikrurizal/statagit.git
 !git branch -M main
 !git push -u origin main
-
+```
 
 
 * Do some works/changes in the local directory
 * For example, I add a dofile & then push it to my github repo
 
+```
 !git add "dofiles/000_initialise git and github.do"
 !git commit -m "Add do file containing guide in setting up git and github"
 !git push -u origin main
-
+```
 
 
